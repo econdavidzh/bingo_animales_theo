@@ -24,7 +24,8 @@ def main():
         
         if imagen_aleatoria:
             # Mostrar la imagen
-            st.image(imagen_aleatoria, caption='Imagen aleatoria')
+            titulo = imagen_aleatoria.split('_')[1].split('.')[0]
+            st.image(imagen_aleatoria, caption=titulo)
         else:
             st.write("No se encontraron imágenes en el directorio.")
     
