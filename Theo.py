@@ -13,16 +13,17 @@ ruta_carpeta = "Animales"
 def main():
     st.title("Bingo Theo!")
     
+    try:
+        lista_animales = lista_animales
+    except:
+        lista_animales = obtener_archivos_en_carpeta(ruta_carpeta)
+    
     # Botón para mostrar una imagen aleatoria
-    if st.button("Selección aleatoria de un animalito :D"):
-        
-        try:
-            lista_animales = lista_animales
-        except:
-            lista_animales = obtener_archivos_en_carpeta(ruta_carpeta)
+    if st.button("Selección aleatoria de un animalito :D")
         
         # Obtener una imagen aleatoria
         imagen_aleatoria = random.choice(lista_animales)
+        lista_animales = lista_animales.remove(imagen_aleatoria)
         
         if imagen_aleatoria:
             # Mostrar la imagen
@@ -31,7 +32,6 @@ def main():
                 st.image(imagen_aleatoria)
                 st.title('Letra: ' + imagen_aleatoria.split('_')[0].split('/')[1])
                 st.title(titulo)
-                lista_animales = lista_animales.remove(imagen_aleatoria)
             
             except:
                 st.write("Se acabaron los animalitos del bingo :(")
