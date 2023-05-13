@@ -10,18 +10,18 @@ def obtener_archivos_en_carpeta(ruta_carpeta):
 # Ruta de la carpeta que deseas explorar
 ruta_carpeta = "Animales"
 
-try:
-    lista_animales = lista_animales
-except:
-    lista_animales = obtener_archivos_en_carpeta(ruta_carpeta)
-
 def main():
     st.title("Bingo Theo!")
     
     # Botón para mostrar una imagen aleatoria
     if st.button("Selección aleatoria de un animalito :D"):
-        # Obtener una imagen aleatoria
         
+        try:
+            lista_animales = lista_animales
+        except:
+            lista_animales = obtener_archivos_en_carpeta(ruta_carpeta)
+        
+        # Obtener una imagen aleatoria
         imagen_aleatoria = random.choice(lista_animales)
         
         if imagen_aleatoria:
