@@ -16,9 +16,7 @@ st.title("Bingo Theo!")
 if st.button("Selección aleatoria de un animalito :D"):
     # Obtener una imagen aleatoria
     imagen_aleatoria = random.choice(lista_animales)
-    if imagen_aleatoria:
-        # Mostrar la imagen
-        imagen_aleatoria = random.choice(lista_animales)
-        titulo = imagen_aleatoria.split('_')[1].split('.')[0]
-        st.image(imagen_aleatoria)
-        st.title('Letra: ' + imagen_aleatoria.split('_')[0].split('/')[1] + ' - Animal: ' + titulo)
+    # Mostrar la imagen
+    titulo = imagen_aleatoria.split('_')[1].split('.')[0]
+    st.image(imagen_aleatoria)
+    st.title('Letra: ' + imagen_aleatoria.split('_')[0].split('/')[1] + ' - Animal: ' + titulo)
