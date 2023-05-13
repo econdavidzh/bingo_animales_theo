@@ -24,8 +24,8 @@ lista_animales = obtener_archivos_en_carpeta("Animales")
 st.title("Bingo Theo!")
         
 # Botón para mostrar una imagen aleatoria
-while len(lista_animales) > 0:
-    if st.button("Selección aleatoria de un animalito :D"):
+if len(lista_animales) > 0:
+    st.button("Selección aleatoria de un animalito :D"):
         # Obtener una imagen aleatoria
         if imagen_aleatoria:
             # Mostrar la imagen
