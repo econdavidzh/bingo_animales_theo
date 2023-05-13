@@ -28,7 +28,7 @@ st.title("Bingo Theo!")
 # Botón para mostrar una imagen aleatoria
 if st.button("Selección aleatoria de un animalito :D"):
     count += 1
-    lista_animales = [for x in lista_animales if x not in animales_seleccionados]
+    lista_animales = [x for x in lista_animales if x not in animales_seleccionados]
     # Obtener una imagen aleatoria
     imagen_aleatoria = obtener_elemento_aleatorio(lista_animales)
     animals_dict[count] = imagen_aleatoria
