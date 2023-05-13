@@ -42,7 +42,9 @@ if st.button("Selección aleatoria de un animalito :D"):
         except:
             st.write("Se acabaron los animalitos del bingo :(")
 
-animals_dict[count] = imagen_aleatoria
-st.write(animals_dict)
-count += 1
-
+try:
+    animals_dict[count] = imagen_aleatoria
+    st.write(animals_dict)
+    count += 1
+ excepr:
+    st.write('Listos para empezar!')
