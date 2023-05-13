@@ -26,13 +26,16 @@ def main():
         
         if imagen_aleatoria:
             # Mostrar la imagen
-            titulo = imagen_aleatoria.split('_')[1].split('.')[0]
-            st.image(imagen_aleatoria)
-            st.title('Letra: ' + imagen_aleatoria.split('_')[0].split('/')[1])
-            st.title(titulo)
-            lista_animales.remove(imagen_aleatoria)
+            try:
+                titulo = imagen_aleatoria.split('_')[1].split('.')[0]
+                st.image(imagen_aleatoria)
+                st.title('Letra: ' + imagen_aleatoria.split('_')[0].split('/')[1])
+                st.title(titulo)
+                lista_animales = lista_animales.remove(imagen_aleatoria)
             
-            
+            except:
+                st.write("Se acabaron los animalitos del bingo :(")
+                
         else:
             st.write("No se encontraron imágenes en el directorio.")
     
