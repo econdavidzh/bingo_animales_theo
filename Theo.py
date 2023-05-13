@@ -35,7 +35,7 @@ if st.button("Selección aleatoria de un animalito :D"):
         try:
             titulo = imagen_aleatoria.split('_')[1].split('.')[0]
             st.image(imagen_aleatoria)
-            st.title('Letra: ' + imagen_aleatoria.split('_')[0].split('/')[1] + ' Animal: ' + titulo)
+            st.title('Letra: ' + imagen_aleatoria.split('_')[0].split('/')[1] + ' - Animal: ' + titulo)
             
         except:
             st.write("Se acabaron los animalitos del bingo :(")
