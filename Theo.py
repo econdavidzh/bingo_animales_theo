@@ -19,7 +19,7 @@ def main():
         lista_animales = obtener_archivos_en_carpeta(ruta_carpeta)
     
     # Botón para mostrar una imagen aleatoria
-    if st.button("Selección aleatoria de un animalito :D")
+    if st.button("Selección aleatoria de un animalito :D"):
         
         # Obtener una imagen aleatoria
         imagen_aleatoria = random.choice(lista_animales)
