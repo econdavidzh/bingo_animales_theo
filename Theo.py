@@ -16,8 +16,8 @@ st.title("Bingo Theo!")
 if st.button("Selección aleatoria de un animalito :D"):
     
     def obtener_elemento_aleatorio(lista):
-    if len(lista) == 0:
-        return None
+        if len(lista) == 0:
+            return None
     
         # Seleccionar un elemento aleatorio de la lista
         elemento_seleccionado = random.choice(lista)
