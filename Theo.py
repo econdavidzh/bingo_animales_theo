@@ -15,7 +15,7 @@ st.title("Bingo Theo!")
 # Botón para mostrar una imagen aleatoria
 if st.button("Selección aleatoria de un animalito :D"):
     # Obtener una imagen aleatoria
-    imagen_aleatoria = obtener_elemento_aleatorio(lista_animales)
+    imagen_aleatoria = random.choice(lista_animales)
     if imagen_aleatoria:
         # Mostrar la imagen
         imagen_aleatoria = random.choice(lista_animales)
