@@ -46,5 +46,5 @@ try:
     animals_dict[count] = imagen_aleatoria
     st.write(animals_dict)
     count += 1
- excepr:
+ except:
     st.write('Listos para empezar!')
